@@ -9,5 +9,5 @@ GitHub pages: // TODO
 2. Use tabs on a webpage 
 
 ## Things I practiced and learnt:
-- TODO 
+- Git Rebase. Haven't a need for that, but I messed up setting up the environment and rebase helped me to fix it
 - TODO
