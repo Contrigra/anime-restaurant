@@ -136,7 +136,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/normalize.css */ \"./src/css/normalize.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n\r\n\r\n// TODO не замарачиваться над дизайном. Цель потренировать табы и вебпак\r\n// TODO generate source maps. Как дебажить аутпут вебпака\r\n// TODO добавить автоматизацию бандлинга index.html и css в дист\r\n// TODO use\r\nconsole.log('test');\r\nconsole.log('test2');\r\nconsole.log('test3');\r\nconsole.log('test3');\r\nconsole.log('test5');\r\n\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/normalize.css */ \"./src/css/normalize.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n\r\n\r\n\r\n\r\n\r\nconst body = document.querySelector('body')\r\n// TODO не замарачиваться над дизайном. Цель потренировать табы и вебпак\r\n// TODO generate source maps. Как дебажить аутпут вебпака\r\n// TODO добавить автоматизацию бандлинга index.html и css в дист\r\n// TODO use\r\n\r\n\r\nconst nav = document.createElement('nav');\r\n\r\n\r\n\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
 
 /***/ })
 
