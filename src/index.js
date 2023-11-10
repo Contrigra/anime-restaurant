@@ -1,15 +1,34 @@
 import './css/normalize.css'
 import './css/style.css'
+import renderNav from "./js/nav.js";
+import renderHomepage from "./js/homepage.js";
+
+renderNav()
+createContentContainer()
+
+renderHomepage()
 
 
+const buttons = document.querySelectorAll('.button')
+for (const button of buttons) {
+    button.addEventListener('click', e => {
+        resolvePage(e)
+    })
+}
 
-const body = document.querySelector('body')
-// TODO не замарачиваться над дизайном. Цель потренировать табы и вебпак
-// TODO generate source maps. Как дебажить аутпут вебпака
-// TODO добавить автоматизацию бандлинга index.html и css в дист
-// TODO use
+function resolvePage() {
+// TODO function that should render a proper subpage according to its class (menu - menu)
+}
 
+console.log(buttons)
 
-const nav = document.createElement('nav');
+// TODO не заморачиваться над дизайном. Цель потренировать модули и вебпак
 
+function createContentContainer() {
+    const contentContainer = document.createElement('div')
+    contentContainer.classList.add('content-container')
 
+    const root = document.querySelector('#content')
+
+    root.appendChild(contentContainer)
+}
