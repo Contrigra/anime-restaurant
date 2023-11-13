@@ -7,28 +7,34 @@ renderNav()
 createContentContainer()
 
 renderHomepage()
-
-
-const buttons = document.querySelectorAll('.button')
-for (const button of buttons) {
-    button.addEventListener('click', e => {
-        resolvePage(e)
-    })
-}
+addEventListenersToButtons()
 
 function resolvePage() {
 // TODO function that should render a proper subpage according to its class (menu - menu)
 }
 
-console.log(buttons)
 
-// TODO не заморачиваться над дизайном. Цель потренировать модули и вебпак
 
 function createContentContainer() {
     const contentContainer = document.createElement('div')
     contentContainer.classList.add('content-container')
 
     const root = document.querySelector('#content')
-
     root.appendChild(contentContainer)
 }
+function clearContent() {
+    const contentContainer = document.querySelector('.content-container');
+    contentContainer.remove()
+    createContentContainer()
+}
+
+function addEventListenersToButtons() {
+    const buttons = document.querySelectorAll('.button')
+    for (const button of buttons) {
+        button.addEventListener('click', e => {
+            resolvePage(e)
+        })
+    }
+}
+
+// TODO не заморачиваться над дизайном. Цель потренировать модули и вебпак

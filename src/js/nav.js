@@ -25,8 +25,8 @@ function navConstruct() {
 
 function createButtons() {
     const buttonAbout = document.createElement('button');
-    buttonAbout.textContent = 'About';
-    buttonAbout.classList.add('about');
+    buttonAbout.textContent = 'Contact';
+    buttonAbout.classList.add('contact');
 
     const buttonMenu = document.createElement('button');
     buttonMenu.textContent = 'Menu';
