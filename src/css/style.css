@@ -36,5 +36,15 @@ button:hover {
 }
 
 .content-container > h1 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.homepage-image {
+  margin-top: 16px;
 }
 

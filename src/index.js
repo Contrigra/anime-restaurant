@@ -3,13 +3,14 @@ import './css/style.css'
 import renderNav from "./js/nav.js";
 import renderHomepage from "./js/homepage.js";
 
+
 renderNav()
 createContentContainer()
 
 renderHomepage()
 addEventListenersToButtons()
 
-function resolvePage() {
+function resolvePageHandler() {
 // TODO function that should render a proper subpage according to its class (menu - menu)
 }
 
@@ -17,22 +18,22 @@ function resolvePage() {
 
 function createContentContainer() {
     const contentContainer = document.createElement('div')
-    contentContainer.classList.add('content-container')
+    contentContainer.classList.add('content-container');
 
-    const root = document.querySelector('#content')
-    root.appendChild(contentContainer)
+    const root = document.querySelector('#content');
+    root.appendChild(contentContainer);
 }
 function clearContent() {
     const contentContainer = document.querySelector('.content-container');
-    contentContainer.remove()
-    createContentContainer()
+    contentContainer.remove();
+    createContentContainer();
 }
 
 function addEventListenersToButtons() {
     const buttons = document.querySelectorAll('.button')
     for (const button of buttons) {
         button.addEventListener('click', e => {
-            resolvePage(e)
+            resolvePageHandler(e)
         })
     }
 }

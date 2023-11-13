@@ -19,15 +19,20 @@ module.exports = {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
             },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+
         ],
     },
 
     devServer: {
-    static: {
-      directory: path.join(__dirname, './dist'),
+        static: {
+            directory: path.join(__dirname, './dist'),
+        },
+        port: 8080,
     },
-    port: 8080,
-  },
 
 };
 
