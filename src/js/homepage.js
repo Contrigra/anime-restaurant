@@ -1,10 +1,9 @@
-
 export default function renderHomepage() {
-const contentContainer = document.querySelector('.content-container');
+    const contentContainer = document.querySelector('.content-container');
 
-addTitle(contentContainer);
-addText(contentContainer);
-addImage(contentContainer);
+    addTitle(contentContainer);
+    addText(contentContainer);
+    addImage(contentContainer);
 }
 
 
@@ -16,6 +15,10 @@ function addTitle(contentContainer) {
 }
 
 function addText(contentContainer) {
+    const homepageText = document.createElement('div');
+    homepageText.className = 'homepage-text';
+    homepageText.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque consequuntur deleniti doloremque esse excepturi magnam, molestias necessitatibus nihil perspiciatis porro, qui ratione reiciendis sint suscipit, ullam veritatis. Id, unde?'
+    contentContainer.append(homepageText);
 
 }
 

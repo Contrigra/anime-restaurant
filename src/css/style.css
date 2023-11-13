@@ -32,7 +32,9 @@ button:hover {
 .content-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .content-container > h1 {
 }
+
