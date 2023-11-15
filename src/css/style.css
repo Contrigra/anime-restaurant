@@ -35,12 +35,19 @@ button:hover {
   flex-direction: column;
 }
 
-.content-container > h1 {
-  font-weight: lighter;
+.title {
   text-align: center;
 }
 
-.title {
+.text-div {
+  margin-bottom: 21.5px;
+}
+
+.content-container > h1:has(.title-name-span) {
+  font-weight: lighter;
+}
+
+.title-name-span {
   font-weight: bold;
 }
 
