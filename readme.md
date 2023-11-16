@@ -2,7 +2,7 @@
 
 Small project of a restaurant page based on The Odin Project's exercise
 
-GitHub pages: // TODO
+GitHub pages: https://contrigra.github.io/anime-restaurant/
 
 ## Goals
 1. Practice new workflow using webpack
